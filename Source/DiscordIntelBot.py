@@ -5,7 +5,7 @@ import requests
 from discord import Webhook, RequestsWebhookAdapter
 import urllib.request, json
 
-ConfigurationFilePath = "C:\\Users\\User\\Documents\\ThreatIntelligenceDiscordBot\\Source\\Config.txt" ##path to configuration file
+ConfigurationFilePath = "/home/jon/Documents/ThreatIntelligenceDiscordBot/Source/Config.txt" ##path to configuration file
 
 
 FileConfig = ConfigParser()

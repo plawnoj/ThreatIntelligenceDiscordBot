@@ -5,16 +5,16 @@ import requests
 from discord import Webhook, RequestsWebhookAdapter
 import urllib.request, json
 
-ConfigurationFilePath = "/home/jon/Documents/ThreatIntelligenceDiscordBot/Source/Config.txt" ##path to configuration file
+ConfigurationFilePath = "C:\\Users\\User\\Documents\\config.txt" ##path to configuration file
 
 
 FileConfig = ConfigParser()
 FileConfig.read(ConfigurationFilePath)
 
-PrivateSectorFeed = Webhook.from_url("https://discord.com/api/webhooks/1009196495548985407/I1x119xKuRiyRnGRv4kKulwgjlw7FbDrYiY60Z-xQY8DaaSYd2XklqDtaffj9Cj0i4Iq/", adapter=RequestsWebhookAdapter()) ##private sector discord hook goes here
-GovernmentFeed = Webhook.from_url("https://discord.com/api/webhooks/1009246379174010880/-OnAxOhqw7StJaKZaziZntzz-E8WtMpX5piG56r9Hiq9fy-A6wDHSqWKU9FQM1DbCjEW", adapter=RequestsWebhookAdapter()) ##gov feed discord hook goes here
-RansomwareFeed = Webhook.from_url("https://discord.com/api/webhooks/1009246821228494968/ZGP2X2wPv8rv2sUSyuRNBlHbWfNwh46DWO5rQ9kCT5Dik2c87IHVER7_nysvDYtFNoSo", adapter=RequestsWebhookAdapter()) ##ransomware feed discord hook goes here
-LogOutput = Webhook.from_url("hhttps://discord.com/api/webhooks/1009247947101327511/umsNmaL3JMOLQ46DXLweboDotUZbGojAdF0rf01CEnRFcwWe9nt9c5kwpEJgVnqseof3", adapter=RequestsWebhookAdapter()) ##logging channel discord hook goes here
+PrivateSectorFeed = Webhook.from_url("https://discord.com/api/webhooks/000/000", adapter=RequestsWebhookAdapter()) ##private sector discord hook goes here
+GovernmentFeed = Webhook.from_url("https://discord.com/api/webhooks/000/000", adapter=RequestsWebhookAdapter()) ##gov feed discord hook goes here
+RansomwareFeed = Webhook.from_url("https://discord.com/api/webhooks/000/000", adapter=RequestsWebhookAdapter()) ##ransomware feed discord hook goes here
+LogOutput = Webhook.from_url("https://discord.com/api/webhooks/000/000", adapter=RequestsWebhookAdapter()) ##logging channel discord hook goes here
 
 def FnGetRansomwareUpdates():
     

@@ -11,10 +11,12 @@ The vx-underground Threat Intelligence Discord Bot gets updates from various cle
 # Getting Started
 * Step 1. Make a web hook. Not sure how to make a webhook? [Discord makes it easy!](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 * Step 2. Create the config.txt file. This config.txt stores when data was recently updated. If a value has a "?" this means it has never received an update and/or is a new entry. The configuration file path is specified at the beginning of the python script.
-* Step 2a. If you'd like to monitor Telegram channels, you will need a [Telegram API Key](https://core.telegram.org/api/obtaining_api_id)
+* Step 2a. While editing the Discord/TelegramIntelBot.py file, paste your Discord webhook urls in the respective fields for PrivateSectorFeed, GovernmentFeed, RansomwareFeed, and LogOutput.
+* Step 2b. If you'd like to monitor Telegram channels, you will need a [Telegram API Key](https://core.telegram.org/api/obtaining_api_id)
 * Step 3. Have internet connection
 * Step 3a. If you're running the Telegram channel monitor, please note it downloads images from the Telegram channel. Sufficient hard disk space will be required to store images
-* Step 4. Run the script
+* Step 4. Install required packages (pip install feedparser | pip install discord)
+* Step 4b. Run the script
 
 # Other notes
 * By default this script requires 4 discord web hooks (5 in total if you decide to use the Telegram bot). It pipes output for private sector updates, governments updates, ransomware group updates, and log output to indicate whether or not it is running. Feel free to remove whatever, or add whatever
